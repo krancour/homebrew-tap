@@ -7,6 +7,13 @@ class Kargo < Formula
   license "Apache-2.0"
   head "https://github.com/akuity/kargo.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/krancour/homebrew-tap/releases/download/kargo-1.0.3"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "483ae7686e10d2a47c682b697f348bb173fcdfaebd4d494fd45b85da321942dd"
+    sha256 cellar: :any_skip_relocation, ventura:       "af42e5f2fc8899793b5dc68608fdf3c532d3d79bdb2356b7def5f9e5317bfd59"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "0504c6e70813ceafe1b1a6cc4fc92c702c688793da045a7e4809968096874265"
+  end
+
   depends_on "go" => :build
 
   def install
