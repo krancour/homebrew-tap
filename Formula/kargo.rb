@@ -2,7 +2,7 @@ class Kargo < Formula
   desc "CLI for Kargo"
   homepage "https://kargo.io"
   url "https://github.com/akuity/kargo.git",
-      tag:      "v1.0.2",
+      tag:      "v1.0.3",
       revision: "bb7afaad9750dfff61f47dd6c5288acbcdb6bce2"
   license "Apache-2.0"
   head "https://github.com/akuity/kargo.git", branch: "main"
