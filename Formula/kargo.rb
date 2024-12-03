@@ -5,21 +5,21 @@
 class Kargo < Formula
   desc "CLI for Kargo"
   homepage "https://kargo.io"
-  version "1.2.0-rc.33"
+  version "1.2.0-rc.34"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/krancour/kargo/releases/download/v1.2.0-rc.33/kargo-darwin-amd64"
-      sha256 "561ad318686f8ca9e95691c9ff4da00ff813ff5dd8ee95b8e4b692032df6a25f"
+      url "https://github.com/krancour/kargo/releases/download/v1.2.0-rc.34/kargo-darwin-amd64"
+      sha256 "24bfcf1ba8942eaa024dd2ec921cd353d3eedabfb2e2639839d9705ff8933e6a"
 
       def install
         bin.install "kargo-darwin-amd64" => "kargo"
       end
     end
     on_arm do
-      url "https://github.com/krancour/kargo/releases/download/v1.2.0-rc.33/kargo-darwin-arm64"
-      sha256 "fd39a4cac2830e1ac788fb6c027f91f677c6577fe44b2ab2c8837d93de60efc3"
+      url "https://github.com/krancour/kargo/releases/download/v1.2.0-rc.34/kargo-darwin-arm64"
+      sha256 "49b2a925425cd60130d87108a5a8bbf11cec14c57ec5f418e2fb34bf1d88afd0"
 
       def install
         bin.install "kargo-darwin-arm64" => "kargo"
@@ -30,8 +30,8 @@ class Kargo < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/krancour/kargo/releases/download/v1.2.0-rc.33/kargo-linux-amd64"
-        sha256 "8c78a13ee3c9be2a93bcfa2dbb696e347d96f378d4ffb143b4d40f92edb3d738"
+        url "https://github.com/krancour/kargo/releases/download/v1.2.0-rc.34/kargo-linux-amd64"
+        sha256 "bfe48e619112d93173f78a7409c5226c6330ffcedaedd4ecdf370c3f48bbb85f"
 
         def install
           bin.install "kargo-linux-amd64" => "kargo"
@@ -40,8 +40,8 @@ class Kargo < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/krancour/kargo/releases/download/v1.2.0-rc.33/kargo-linux-arm64"
-        sha256 "d7984fd83dabadedebf3f1095b0d32375140c3e285589ef22cd272b456b12e87"
+        url "https://github.com/krancour/kargo/releases/download/v1.2.0-rc.34/kargo-linux-arm64"
+        sha256 "43fea8e8e44c67f6d18c23e29f527e40e03c2299d7a45f640ae8211999f51613"
 
         def install
           bin.install "kargo-linux-arm64" => "kargo"
